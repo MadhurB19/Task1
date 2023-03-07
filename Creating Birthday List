@@ -1,0 +1,58 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+	
+	char name[10];
+	int ch;
+	do{
+	
+	printf("-------------------BIRTHDAY LIST APPLICATION-----------------------");
+	printf("\n\tName\t\t\tDOB\t\t");
+	printf("\n\tSudhanshu\t\tMay 12,2002");
+	printf("\n\tMadhur\t\tOct 19,2002");			
+	printf("\n\tGanesh\t\t\tSep 14,2002");
+	printf("\n\tAdvait\t\t\tMar 26,2002");
+	printf("\n\tAryan\t\t\tMar 10,2002");
+	printf("\n--------------------------------------------------------------------");
+	printf("\n1-Sudhanshu\n2-Madhur\n3-Ganesh\n4-Advait\n5-Aryan");
+	printf("\nEnter your choice :");
+	scanf("%d",&ch);
+	printf("\n--------------------------------------------------------------------");
+	
+	switch(ch)
+	{
+		case 1:
+			printf("\nHappy Birthday Sudhanshu");
+			printf("\nMay 12,2002");
+			printf("\nsudhanshu@gmail.com");
+			break;
+		case 2:
+			printf("\nHappy Birthday Madhur");
+			printf("\nOct 19,2002");
+			printf("\nmadhur@gmail.com");
+			break;
+		case 3:
+			printf("\nHappy Birthday Ganesh");
+			printf("\nSep 14,2002");
+			printf("\nganesh14@gmail.com");
+			break;
+		case 4:
+			printf("\nHappy Birthday Advait");
+			printf("\nMar 26,2002");
+			printf("\nadvait26@gmail.com");
+			break;
+		case 5:
+			printf("\nHappy Birthday Aryan");
+			printf("\nMar 10,2002");
+			printf("\naryan@gmail.com");
+			break;
+		default:
+			printf("\ninvalid choice..");
+	}
+	printf("\nDo you want to continue press 6");
+	scanf("%d",&ch);
+	} while(ch==6);
+	printf("\n-----------------THANK YOU-----------------------");
+	return 0;
+}
